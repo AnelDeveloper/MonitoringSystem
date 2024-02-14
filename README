@@ -1,0 +1,39 @@
+# Lightweight Monitoring System
+
+## Description
+
+This lightweight monitoring system is designed to periodically check the specified URLs for changes and send notifications via email when changes are detected. It utilizes Node.js and a set of powerful libraries to fetch website content, compare it against previous checks, and alert the user through email.
+
+## Features
+
+- Monitoring of specified URLs at scheduled intervals.
+- Change detection through website content hashing.
+- Email notifications for detected changes.
+- Configurable monitoring schedule and target URLs.
+
+## Prerequisites
+
+Before you can run this application, make sure you have the following installed:
+
+- Node.js (v14 or higher recommended)
+- npm (Node Package Manager)
+
+## Setup
+
+1. **Clone the repository:**
+
+
+3. **Configure environment variables:**
+
+Copy the `.env.example` file to a new file named `.env` and fill in your specific values:
+
+```plaintext
+MONGO_URL="your_mongodb_connection_string"
+SENDGRID_API_KEY="your_sendgrid_api_key"
+MONITORING_URLS="url1,url2,url3"
+CRON_SCHEDULE="* * * * *"  # Example: every minute
+EMAIL_RECIPIENT="recipient_email@example.com"
+EMAIL_SENDER="sender_email@example.com"
+
+Start the application:
+npm start

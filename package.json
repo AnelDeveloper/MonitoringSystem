@@ -1,0 +1,25 @@
+{
+  "name": "sensmindtask",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.4",
+    "hasha": "^6.0.0",
+    "mongodb": "^6.3.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.9"
+  }
+}
